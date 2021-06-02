@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+<h1 class="btn btn-primary heading" >Gesturer
+      <br>
+      <span>&#128077;</span>
+      <span>&#128078;</span>
+      <span>&#128079;</span>
+      <span>&#128080;</span>
+      <span>&#128400;</span>
+      <span>&#129304;</span>
+      </h1>
+      <br>
+
+      <p style="font-size: 22px;">Take photo of gesture to generate gesture
+      	<br>
+        <button style="color: rgb(174, 0, 255)">Are you showing peace</button>
+        <br>
+        <button style="color: rgb(57, 54, 246)">Are you showing like</button>
+        <br>
+        <button style="color: red">Are you showing dislike</button>
+        <br>
+      </p>
+<br>
+<br>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam:</label>
+        <div id="Camera"></div>
+
+        <br><br>
+<button onclick="takeSnap();" class="btn btn-warning">Take Photo</button>
+
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label style="color:aqua">Prediction 1</label>
+        <p class="emotionName" id="Emotion_Name"></p>
+        <p class="emoji" id="Newmoji"></p>
+
+          <label style="color:chartreuse">Prediction 2</label>
+          <p class="emotionName2" id="Emotion_Name2"></p>
+          <p class="emoji" id="Newmoji2"></p>
+   </div>
+   <div class="col-md-4 col-sm-12 col-xs-12">
+    <label>Snapshot:</label>
+    <div id="Result"></div>
+
+    <br><br>
+<button onclick="IDSnap();" class="btn btn-warning">Identify Gesture</button>
+
+  </div>
+   </center>
+
+  </div>
+
+<script src="js.js"></script>
+
+  </body>
+</html>
+
+ 
